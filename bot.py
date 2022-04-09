@@ -8,7 +8,7 @@ intents = discord.Intents.default()
 intents.members = True
 
 prefix = '!'
-wl = 640926869948203030
+wl = [your_id, friend_id]
  
 client = commands.Bot(command_prefix = prefix, intents = intents)
 
